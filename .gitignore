@@ -6,6 +6,10 @@ npm-debug.log
 
 # Nuxt build
 .nuxt
+.idea
+.gitignore
+.editorconfig
+
 
 # Nuxt generate
 dist

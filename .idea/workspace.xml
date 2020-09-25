@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d83192d-26f3-4f1f-8487-e72aca9e1545" name="Default Changelist" comment="" />
+    <list default="true" id="5d83192d-26f3-4f1f-8487-e72aca9e1545" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1i0FU3kBFvxKtZcUyCA8yhJvJtk" />
   <component name="ProjectViewState">
@@ -56,33 +63,53 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601036615047</updated>
-      <workItem from="1601036616364" duration="2961000" />
+      <workItem from="1601036616364" duration="3419000" />
+      <workItem from="1601040919483" duration="354000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="2073" y="-53" key="#Notifications" timestamp="1601040659586">
+      <screen x="1920" y="-628" width="864" height="1506" />
+    </state>
+    <state x="2073" y="-53" key="#Notifications/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601040659586" />
     <state x="1920" y="-221" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601036917534">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
     <state x="1920" y="-221" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601036917534" />
-    <state width="841" height="567" key="GridCell.Tab.0.bottom" timestamp="1601038780111">
+    <state x="2162" y="43" key="Github.CreateGistDialog" timestamp="1601040640874">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="567" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601038780111" />
-    <state width="841" height="567" key="GridCell.Tab.0.center" timestamp="1601038780111">
+    <state x="2162" y="43" key="Github.CreateGistDialog/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601040640874" />
+    <state width="841" height="567" key="GridCell.Tab.0.bottom" timestamp="1601040894215">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="567" key="GridCell.Tab.0.center/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601038780111" />
-    <state width="841" height="567" key="GridCell.Tab.0.left" timestamp="1601038780111">
+    <state width="841" height="567" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601040894215" />
+    <state width="841" height="567" key="GridCell.Tab.0.center" timestamp="1601040894215">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="567" key="GridCell.Tab.0.left/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601038780111" />
-    <state width="841" height="567" key="GridCell.Tab.0.right" timestamp="1601038780111">
+    <state width="841" height="567" key="GridCell.Tab.0.center/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601040894215" />
+    <state width="841" height="567" key="GridCell.Tab.0.left" timestamp="1601040894215">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="567" key="GridCell.Tab.0.right/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601038780111" />
+    <state width="841" height="567" key="GridCell.Tab.0.left/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601040894215" />
+    <state width="841" height="567" key="GridCell.Tab.0.right" timestamp="1601040894215">
+      <screen x="1920" y="-628" width="864" height="1506" />
+    </state>
+    <state width="841" height="567" key="GridCell.Tab.0.right/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601040894215" />
   </component>
 </project>
