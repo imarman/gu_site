@@ -145,6 +145,7 @@
 
 <script>
 import courseApi from '~/api/course'
+import querystring from 'querystring' // url参数拼接工具
 
 export default {
   async asyncData(page) {
@@ -199,13 +200,31 @@ export default {
     },
     // 选择二级分类
     searchSubjectLevelTwo(subjectId) {
-      window.location = 'course?subjectParentId=' + this.searchObj.subjectParentId + '&' +
-        'subjectId=' + subjectId
+      // window.location = 'course?subjectParentId=' + this.searchObj.subjectParentId + '&' +
+      //   'subjectId=' + subjectId
+
+      const queryObj = {
+        subjectParentId: this.searchObj.subjectParentId,
+        subjectId: subjectId
+      }
+      // 可以把对象转成 url 形式的字符串
+      const queryUrl = querystring.stringify(queryObj)
+      // subjectParentId=xxx&subjectId=xxx
+      // console.log(queryUrl)
+
+      window.location = 'course?' + queryUrl
     },
     // 选择按销量倒序
     searchBuyCount() {
-      window.location = 'course?subjectParentId=' + this.searchObj.subjectParentId + '&' +
-        'subjectId=' + this.searchObj.subjectId + '&buyCountSort=1'
+      // window.location = 'course?subjectParentId=' + this.searchObj.subjectParentId + '&' +
+      //   'subjectId=' + this.searchObj.subjectId + '&buyCountSort=1'
+      const queryObj = {
+        subjectParentId: this.searchObj.subjectParentId,
+        subjectId: this.searchObj.subjectId,
+        buyCountSort: 1
+      }
+      const queryUrl = querystring.stringify(queryObj)
+      window.location = 'course?' + queryUrl
     }
   }
 }
