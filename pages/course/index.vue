@@ -41,7 +41,7 @@
             </dt>
             <dd class="c-s-dl-li">
               <!-- 二级类别 开始-->
-              <ul class="clearfix">
+              <ul v-if="$route.query.subjectParentId" class="clearfix">
                 <li :class="{current: !$route.query.subjectId}">
                   <a
                     title="全部"
@@ -82,12 +82,14 @@
                   <i>↓</i>
                 </a>
               </li>
-              <li>
-                <a title="最新" href="javascript:void(0);">最新
+              <li :class="{'current bg-green': searchObj.gmtCreateSort}">
+                <a title="最新" href="javascript:void(0);" @click="searchGmtCreate()">最新<i>↓</i>
                 </a>
               </li>
-              <li>
-                <a title="价格" href="javascript:void(0);">价格
+              <li :class="{'current bg-green': searchObj.priceSort}">
+                <a v-if="!$route.query.type || $route.query.type == 1" title="价格" href="javascript:void(0);" @click="searchPrice(2)">价格<i>↑</i>
+                </a>
+                <a v-if="$route.query.type == 2" title="价格" href="javascript:void(0);" @click="searchPrice(1)">价格<i>↓</i>
                 </a>
               </li>
             </ol>
@@ -160,6 +162,7 @@ export default {
     searchObj.buyCountSort = query.buyCountSort || ''
     searchObj.gmtCreateSort = query.gmtCreateSort || ''
     searchObj.priceSort = query.priceSort || ''
+    searchObj.type = query.type || '' // 1正序 2 倒序
 
     // 课程列表的查询
     const courseListResponse = await courseApi.getList(searchObj)
@@ -222,6 +225,27 @@ export default {
         subjectParentId: this.searchObj.subjectParentId,
         subjectId: this.searchObj.subjectId,
         buyCountSort: 1
+      }
+      const queryUrl = querystring.stringify(queryObj)
+      window.location = 'course?' + queryUrl
+    },
+    // 按照创建时间排序
+    searchGmtCreate() {
+      const queryObj = {
+        subjectParentId: this.searchObj.subjectParentId,
+        subjectId: this.searchObj.subjectId,
+        gmtCreateSort: 1
+      }
+      const queryUrl = querystring.stringify(queryObj)
+      window.location = 'course?' + queryUrl
+    },
+    // 按价格排序
+    searchPrice(type) {
+      const queryObj = {
+        subjectParentId: this.searchObj.subjectParentId,
+        subjectId: this.searchObj.subjectId,
+        priceSort: 1,
+        type: type
       }
       const queryUrl = querystring.stringify(queryObj)
       window.location = 'course?' + queryUrl
