@@ -86,6 +86,7 @@ export default {
 // asyncData被调用的时候，第一个参数被设定为当前页面的上下文对象
 // 使用同步调用
   async asyncData(page) {
+    // 这里可以调用多个 api
     const response = await teacherApi.getById(page.route.params.id)
     return {
       teacher: response.data.teacher,
