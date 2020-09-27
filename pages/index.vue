@@ -4,14 +4,9 @@
     <!-- 幻灯片 开始 -->
     <div v-swiper:mySwiper="swiperOption">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background: #040B1B;">
-          <a target="_blank" href="/">
-            <img src="~/assets/photo/banner/1525939573202.jpg" alt="首页banner">
-          </a>
-        </div>
-        <div class="swiper-slide" style="background: #040B1B;">
-          <a target="_blank" href="/">
-            <img src="~/assets/photo/banner/1525939573202.jpg" alt="首页banner">
+        <div v-for="(topBannerAd, index) in topBannerAdList" :key="index" :style="'background:'+topBannerAd.color" class="swiper-slide">
+          <a :href="topBannerAd.linkUrl" target="_blank">
+            <img :src="topBannerAd.imageUrl" :alt="topBannerAd.title">
           </a>
         </div>
       </div>
@@ -337,7 +332,17 @@
 </template>
 
 <script>
+import indexApi from '~/api/index'
 export default {
+
+  async asyncData(page) {
+    const topBannerAdListResp = await indexApi.getTopBannerAdList()
+    return {
+      topBannerAdList: topBannerAdListResp.data.items
+    }
+  },
+
+  // 幻灯片导航的定义
   data() {
     return {
       swiperOption: {
