@@ -10,21 +10,21 @@
       <form action="register">
         <div class="input-prepend restyle">
           <input
-            v-model="params.nickname"
+            v-model="member.nickname"
             type="text"
             placeholder="你的昵称">
           <i class="iconfont icon-user"/>
         </div>
         <div class="input-prepend restyle no-radius">
           <input
-            v-model="params.mobile"
+            v-model="member.mobile"
             type="text"
             placeholder="手机号">
           <i class="iconfont icon-phone"/>
         </div>
         <div class="input-prepend restyle no-radius" style="position:relative">
           <input
-            v-model="params.code"
+            v-model="member.code"
             type="text"
             placeholder="验证码">
           <i class="iconfont icon-yanzhengma"/>
@@ -36,7 +36,7 @@
         </div>
         <div class="input-prepend">
           <input
-            v-model="params.password"
+            v-model="member.password"
             type="password"
             placeholder="设置密码">
           <i class="iconfont icon-password"/>
@@ -60,7 +60,8 @@
       <div class="more-sign">
         <h6>社交帐号直接注册</h6>
         <ul>
-          <li><a id="weixin" class="weixin" href="http://localhost:8150/api/ucenter/wx/login"><i class="iconfont icon-weixin"/></a></li>
+          <li><a id="weixin" class="weixin" href="http://localhost:8150/api/ucenter/wx/login"><i
+            class="iconfont icon-weixin"/></a></li>
           <li><a id="qq" class="qq" target="_blank" href="#"><i class="iconfont icon-qq"/></a></li>
         </ul>
       </div>
@@ -71,12 +72,13 @@
 <script>
 import '~/assets/css/sign.css'
 import '~/assets/css/iconfont.css'
+import registerApi from '~/api/register'
 
 export default {
   layout: 'sign',
   data() {
     return {
-      params: {
+      member: {
         mobile: '',
         code: '',
         nickname: '',
@@ -90,17 +92,40 @@ export default {
   methods: {
     // 获取验证码
     getCodeFun() {
-
+      // 如果以点击, 则退出  防止重复提交
+      if (this.sending) return
+      // 用户以点击
+      this.sending = true
+      // TODO 获取验证码
+      console.log('发送验证码请求')
+      // 倒计时
+      this.timeDown()
+      // 提示发送成功
+      this.$message.success('此验证码需要您猜 ..')
     },
 
     // 倒计时
     timeDown() {
-
+      this.codeText = this.second
+      // 定义计时器
+      const timer = setInterval(() => {
+        this.codeText--
+        if (this.codeText < 1) {
+          // 清空计时器
+          clearInterval(timer)
+          this.codeText = '获取验证码'
+          this.sending = false
+          this.second = 60
+        }
+      }, 1000)
     },
 
     // 注册
     submitRegister() {
-
+      registerApi.register(this.member).then(resp => {
+        this.$message.success(resp.message)
+        this.$router.push({ path: 'login' })
+      })
     }
   }
 }
