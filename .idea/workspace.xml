@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d83192d-26f3-4f1f-8487-e72aca9e1545" name="Default Changelist" comment="视频播放">
-      <change afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
+    <list default="true" id="5d83192d-26f3-4f1f-8487-e72aca9e1545" name="Default Changelist" comment="推荐位">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,8 @@
       <workItem from="1601036616364" duration="3419000" />
       <workItem from="1601040919483" duration="4242000" />
       <workItem from="1601101939607" duration="17013000" />
-      <workItem from="1601171105630" duration="11653000" />
+      <workItem from="1601171105630" duration="12387000" />
+      <workItem from="1601271494816" duration="3015000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1601041286619</created>
@@ -124,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601187683484</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="推荐位">
+      <created>1601216573407</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601216573407</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +155,8 @@
     <MESSAGE value="课程显示" />
     <MESSAGE value="引入 qureystring" />
     <MESSAGE value="视频播放" />
-    <option name="LAST_COMMIT_MESSAGE" value="视频播放" />
+    <MESSAGE value="推荐位" />
+    <option name="LAST_COMMIT_MESSAGE" value="推荐位" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2213" y="14" key="#ESLint" timestamp="1601185519096">
@@ -170,22 +179,22 @@
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
     <state x="2162" y="43" key="Github.CreateGistDialog/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601040640874" />
-    <state width="841" height="359" key="GridCell.Tab.0.bottom" timestamp="1601186524860">
+    <state width="841" height="491" key="GridCell.Tab.0.bottom" timestamp="1601279707780">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="359" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601186524860" />
-    <state width="841" height="359" key="GridCell.Tab.0.center" timestamp="1601186524860">
+    <state width="841" height="491" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601279707780" />
+    <state width="841" height="491" key="GridCell.Tab.0.center" timestamp="1601279707779">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="359" key="GridCell.Tab.0.center/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601186524860" />
-    <state width="841" height="359" key="GridCell.Tab.0.left" timestamp="1601186524860">
+    <state width="841" height="491" key="GridCell.Tab.0.center/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601279707779" />
+    <state width="841" height="491" key="GridCell.Tab.0.left" timestamp="1601279707779">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="359" key="GridCell.Tab.0.left/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601186524860" />
-    <state width="841" height="359" key="GridCell.Tab.0.right" timestamp="1601186524860">
+    <state width="841" height="491" key="GridCell.Tab.0.left/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601279707779" />
+    <state width="841" height="491" key="GridCell.Tab.0.right" timestamp="1601279707780">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="359" key="GridCell.Tab.0.right/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601186524860" />
+    <state width="841" height="491" key="GridCell.Tab.0.right/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601279707780" />
     <state x="1944" y="-146" key="Vcs.Push.Dialog.v2" timestamp="1601041290303">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
