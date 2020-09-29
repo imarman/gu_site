@@ -19,10 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d83192d-26f3-4f1f-8487-e72aca9e1545" name="Default Changelist" comment="refine">
-      <change afterPath="$PROJECT_DIR$/api/register.js" afterDir="false" />
+    <list default="true" id="5d83192d-26f3-4f1f-8487-e72aca9e1545" name="Default Changelist" comment="注册">
+      <change afterPath="$PROJECT_DIR$/api/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/request.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +99,8 @@
       <workItem from="1601040919483" duration="4242000" />
       <workItem from="1601101939607" duration="17013000" />
       <workItem from="1601171105630" duration="12387000" />
-      <workItem from="1601271494816" duration="7268000" />
+      <workItem from="1601271494816" duration="7311000" />
+      <workItem from="1601344160307" duration="4503000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1601041286619</created>
@@ -139,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601283079639</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="注册">
+      <created>1601307614321</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601307614321</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +176,8 @@
     <MESSAGE value="视频播放" />
     <MESSAGE value="推荐位" />
     <MESSAGE value="refine" />
-    <option name="LAST_COMMIT_MESSAGE" value="refine" />
+    <MESSAGE value="注册" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2213" y="14" key="#ESLint" timestamp="1601185519096">
@@ -187,26 +200,26 @@
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
     <state x="2162" y="43" key="Github.CreateGistDialog/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601040640874" />
-    <state width="841" height="491" key="GridCell.Tab.0.bottom" timestamp="1601283086567">
+    <state width="841" height="315" key="GridCell.Tab.0.bottom" timestamp="1601361049534">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="491" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601283086567" />
-    <state width="841" height="491" key="GridCell.Tab.0.center" timestamp="1601283086566">
+    <state width="841" height="315" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601361049534" />
+    <state width="841" height="315" key="GridCell.Tab.0.center" timestamp="1601361049534">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="491" key="GridCell.Tab.0.center/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601283086566" />
-    <state width="841" height="491" key="GridCell.Tab.0.left" timestamp="1601283086566">
+    <state width="841" height="315" key="GridCell.Tab.0.center/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601361049534" />
+    <state width="841" height="315" key="GridCell.Tab.0.left" timestamp="1601361049534">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="491" key="GridCell.Tab.0.left/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601283086566" />
-    <state width="841" height="491" key="GridCell.Tab.0.right" timestamp="1601283086567">
+    <state width="841" height="315" key="GridCell.Tab.0.left/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601361049534" />
+    <state width="841" height="315" key="GridCell.Tab.0.right" timestamp="1601361049534">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state width="841" height="491" key="GridCell.Tab.0.right/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601283086567" />
-    <state x="1944" y="-146" key="Vcs.Push.Dialog.v2" timestamp="1601041290303">
+    <state width="841" height="315" key="GridCell.Tab.0.right/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601361049534" />
+    <state x="1944" y="-146" key="Vcs.Push.Dialog.v2" timestamp="1601307627796">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>
-    <state x="1944" y="-146" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601041290303" />
+    <state x="1944" y="-146" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.-628.864.1506@1920.-628.864.1506" timestamp="1601307627796" />
     <state x="2009" y="44" key="run.anything.popup" timestamp="1601125720226">
       <screen x="1920" y="-628" width="864" height="1506" />
     </state>

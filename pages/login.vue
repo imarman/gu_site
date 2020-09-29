@@ -34,7 +34,8 @@
       <div class="more-sign">
         <h6>社交帐号登录</h6>
         <ul>
-          <li><a id="weixin" class="weixin" href="http://localhost:8150/api/ucenter/wx/login"><i class="iconfont icon-weixin"/></a></li>
+          <li><a id="weixin" class="weixin" href="http://localhost:8150/api/ucenter/wx/login"><i
+            class="iconfont icon-weixin"/></a></li>
           <li><a id="qq" class="qq" target="_blank" href="#"><i class="iconfont icon-qq"/></a></li>
         </ul>
       </div>
@@ -45,6 +46,9 @@
 <script>
 import '~/assets/css/sign.css'
 import '~/assets/css/iconfont.css'
+
+import cookie from 'js-cookie'
+import loginApi from '~/api/login'
 
 export default {
   layout: 'sign',
@@ -61,7 +65,16 @@ export default {
   methods: {
     // 登录
     submitLogin() {
-
+      // 执行远程登陆接口
+      loginApi.submitLogin(this.user).then(resp => {
+        // 将 jwt 写入 cookie
+        // 第三个参数是 跨域问题
+        cookie.set('guli_jwt_token', resp.data.token, { domain: 'localhost' })
+        this.$message.success(resp.message)
+        // 跳转到首页面
+        window.location.href = '/'
+        this.$router.push({ path: '/' })
+      })
     }
   }
 }
