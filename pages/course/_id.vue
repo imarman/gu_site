@@ -13,7 +13,9 @@
           :href="'/course?subjectParentId='+course.subjectLevelOneId"
           class="c-333 fsize14">{{ course.subjectLevelOne }}</a>
         \
-        <a :href="'/course?subjectParentId='+course.subjectLevelOneId + '&subjectId='+course.subjectLevelTwoId" class="c-333 fsize14">{{ course.subjectLevelTwo }}</a>
+        <a
+          :href="'/course?subjectParentId='+course.subjectLevelOneId + '&subjectId='+course.subjectLevelTwoId"
+          class="c-333 fsize14">{{ course.subjectLevelTwo }}</a>
       </section>
       <!-- /课程所属分类 结束 -->
 
@@ -27,7 +29,7 @@
         <aside class="c-attr-wrap">
           <section class="ml20 mr15">
             <h2 class="hLh30 txtOf mt15">
-              <span class="c-fff fsize24" >{{ course.title }}</span>
+              <span class="c-fff fsize24">{{ course.title }}</span>
             </h2>
             <section class="c-attr-jg">
               <span class="c-fff">价格：</span>
@@ -43,8 +45,11 @@
                 <a class="c-fff vam" title="收藏" href="#">收藏</a>
               </span>
             </section>
+            <!--            <section class="c-attr-mt">-->
+            <!--              <a href="#" title="立即观看" class="comm-btn c-btn-3">立即观看</a>-->
+            <!--            </section>-->
             <section class="c-attr-mt">
-              <a href="#" title="立即观看" class="comm-btn c-btn-3">立即观看</a>
+              <a href="javascript:void(0)" title="立即观看" class="comm-btn c-btn-3" @click="createOrder()">立即购买</a>
             </section>
           </section>
         </aside>
@@ -159,7 +164,10 @@
                       </a>
                     </div>
                     <section class="hLh30 txtOf">
-                      <a :href="'/teacher/'+course.teacherId" class="c-333 fsize16 fl" target="_blank">{{ course.teacherName }}</a>
+                      <a
+                        :href="'/teacher/'+course.teacherId"
+                        class="c-333 fsize16 fl"
+                        target="_blank">{{ course.teacherName }}</a>
                     </section>
                     <section class="hLh20 txtOf">
                       <span class="c-999">{{ course.intro }}</span>
@@ -179,6 +187,7 @@
 </template>
 <script>
 import courseApi from '~/api/course'
+import orderApi from '~/api/order'
 
 export default {
   async asyncData(page) {
@@ -187,18 +196,28 @@ export default {
       course: resp.data.course,
       chapterList: resp.data.chapterVoList
     }
+  },
+  methods: {
+    createOrder() {
+      orderApi.createOrder(this.course.id).then(resp => {
+        // 跳转到订单预览页面
+        this.$router.push({ path: '/order/' + resp.data.orderId })
+      })
+    }
   }
 }
 </script>
 <style>
-.course-txt-body ol, .course-txt-body ul{
+.course-txt-body ol, .course-txt-body ul {
   padding-left: 40px;
   margin: 16px 0;
 }
-.course-txt-body ol li{
+
+.course-txt-body ol li {
   list-style: decimal;
 }
-.course-txt-body ul li{
+
+.course-txt-body ul li {
   list-style: disc;
 }
 </style>
