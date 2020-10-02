@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d83192d-26f3-4f1f-8487-e72aca9e1545" name="Default Changelist" comment="jwt 登陆">
-      <change afterPath="$PROJECT_DIR$/api/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/order/_id.vue" afterDir="false" />
+    <list default="true" id="5d83192d-26f3-4f1f-8487-e72aca9e1545" name="Default Changelist" comment="订单">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/course/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/course/_id.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +99,7 @@
       <workItem from="1601271494816" duration="7311000" />
       <workItem from="1601344160307" duration="5116000" />
       <workItem from="1601431586749" duration="723000" />
-      <workItem from="1601610851708" duration="3038000" />
+      <workItem from="1601610851708" duration="4844000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1601041286619</created>
@@ -158,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601366139211</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="订单">
+      <created>1601629780761</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601629780761</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +191,8 @@
     <MESSAGE value="refine" />
     <MESSAGE value="注册" />
     <MESSAGE value="jwt 登陆" />
-    <option name="LAST_COMMIT_MESSAGE" value="jwt 登陆" />
+    <MESSAGE value="订单" />
+    <option name="LAST_COMMIT_MESSAGE" value="订单" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2213" y="14" key="#ESLint" timestamp="1601185519096">

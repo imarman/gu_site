@@ -14,5 +14,12 @@ export default {
       url: `/api/trade/order/auth/get/${orderId}`,
       method: 'get'
     })
+  },
+  isBuy(courseId) {
+    return request({
+      baseURL: 'http://localhost:9170',
+      url: `/api/trade/order/auth/is-buy/${courseId}`,
+      method: 'get'
+    })
   }
 }
